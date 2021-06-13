@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivara </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+
+
+<body>
+    <nav class="navigation sticky">
+        <div class="logo">
+            NIVARA
+        </div>
+        <div class="rightside">
+            <div class="darktoggleer">
+                <a onclick="darktoggle()"><i class="fas fa-sun" ></i></a>
+            </div>
+            <ul class="addresses">
+                <li class="active"><a href="#homesection" class="home ">Home</a></li>
+                <li><a href="#project1" class="projects ">Projects</a></li>
+                <li><a href="#aboutus1" class="AboutUs ">About us</a></li>
+                <li><a href="#contact1" class="contactUs">Contact us</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <section id="homesection">
+        <div class="wallpaper">
+            <div class="wallpaperdata">
+                <h1 style="color: white;letter-spacing: 5px;font-size:60px;font-weight: 100;text-shadow:10px 10px 10px 10px rgba(0,0,0,1);">Nivara Construction</h1>
+                <h2 style="color: white;letter-spacing: 5px;font-size:30px;font-weight: 100;">New Company</h2>
+            </div>
+        </div>
+    </section>
+    <div id="project1">&nbsp;</div>
+    <section id="projectssection">
+        <h1 class="titleOfProjects">Projects</h1>
+        <div class="projects">
+            <div class="project-card1">
+                <img src="assets/home1.jpg" width="100%" style="border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                <div class="location1">
+                    <p class="location-style">Pune</p>
+                    <div class="work1">
+                        <p class="feature">Features</p>
+                        <ol class="numberDesign">
+                            <li>Sustainable design with a proper balance of aesthetics, , and security</li>
+                            <li>accessibility</li>
+                            <li>cost-effectiveness</li>
+                            <li>safety</li>
+                        </ol>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="project-card2">
+                <img src="assets/home2.jpg" width="100%" style="border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                <div class="location2">
+                    <p class="location-style">Mumbai</p>
+                    <div class="work2">
+                        <p class="feature">Features</p>
+                        <ol class="numberDesign">
+                            <li>Superior indoor air quality, based on the specific requirements of the space</li>
+                            <li>Energy efficient design and performance</li>
+                            <li>cost-effectiveness</li>
+                            <li>Reduced greenhouse gas emissions</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card3">
+                <img src="assets/home3.jpg" width="100%" style="border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                <div class="location3">
+                    <p class="location-style">Baramati</p>
+                    <div class="work3">
+                        <p class="feature">Features</p>
+                        <ol class="numberDesign">
+                            <li>Reduced greenhouse gas emission</li>
+                            <li>Optimal lighting and acoustics </li>
+                            <li>Thermal comfort and appropriate humidity levels </li>
+                            <li>safety</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="aboutus1">&nbsp;</div>
+
+    <section id="aboutussection">
+        <h1 class="titleOfabout">About Us</h1>
+        <p class="dataOfabout">It’s our mission at Architectural Design Associates to provide client focused service through our responsible practice of Architecture. Our tradition of dedication, professionalism and outstanding customer service is a testament to that mission
+            as we strive each day for excellence in bringing our valued clients’ ideas to life.</p>
+    </section>
+    <div id="contact1">&nbsp; </div>
+    <section id="Contactussection">
+        <h2 class="titleOfContact">Contact Us</h2>
+        <div class="contact-content">
+            <form class="contactus">
+                <div class="first">
+                    <div class="names">
+                        <label for="firstname">First Name:- </label>
+                        <input id="firstname" name="firstname" style="width: 97%;" type="text" placeholder="Full Name" />
+                    </div>
+                    <div class="names">
+                        <label for="lastname">Last Name:- </label>
+                        <input class="lastname" type="text" name="lastname" style="width:97%;" placeholder="Last Name" />
+                    </div>
+                </div>
+                <label for="BusinessEmail">Email:-</label>
+                <input id="BusinessEmail" name="BusinessEmail" type="text" placeholder="Email" style="width: 99%;">
+                <br>
+                <label for="Company">Company:- </label>
+                <input id="Company" name="Company" type="text" placeholder="Company" style="width: 99%;">
+                <br>
+                <div class="names">
+                    <label for="textarea">Tell me more about yourself:- </label>
+                    <textarea id="textarea" placeholder="Address" name="textarea"></textarea>
+                </div>
+                <br>
+                <label for="checkbox" style="margin-left:10px;">Would you like to subscribe to our customer Experience  blog?</label>
+                <br>
+                <input type="radio" style="margin-left:10px;" name="customer-experience" id="radio1" value="Yes" checked>
+                <label for="radio1">Yes</label>
+                <br>
+                <input type="radio" style="margin-left:10px;" name="customer-experience" id="radio2" value="No">
+                <label for="radio2">No</label>
+                <br>
+                <br>
+                <button onclick="function1() " class="sendme">Send me</button>
+            </form>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.196139208862!2d74.77653421434651!3d20.904427097388385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdec54b17137a75%3A0xa38abd6806ce96b1!2sNivara%20Construction!5e0!3m2!1sen!2sin!4v1623577823555!5m2!1sen!2sin"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <br>
+                <p style="font-size: 10px;opacity:0.8;">Nivara Construction.Inc</p>
+
+                <p style="font-size: 10px;opacity:0.8;">Baramati, 413102</p>
+
+                <a style="font-size: 13px;text-decoration: none;color:rgba(255, 0, 0, 0.605);" href="mailto:nikita.jadhav9852@gmail.com">nikita.jadhav9852@gmail.com</a>
+                <br>
+                <a style="font-size: 11px;text-decoration: none;color:rgba(255, 0, 0, 0.605);" href="#hpranav1121@gmail.com">(+91)9011740811</a>
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            NIVARA
+        </div>
+        <p class="Copyright">Copyright &#169; 2021 Nivara Construction.Inc</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
